@@ -2,8 +2,8 @@
  * =====================================================================
  * Programming Project for NCEA Level 3, Standard 91906
  * ---------------------------------------------------------------------
- * Project Name:   PROJECT NAME HERE
- * Project Author: PROJECT AUTHOR HERE
+ * Project Name:   Out Of Control
+ * Project Author: Torrian Kinred-Harding
  * GitHub Repo:    GITHUB REPO URL HERE
  * ---------------------------------------------------------------------
  * Notes:
