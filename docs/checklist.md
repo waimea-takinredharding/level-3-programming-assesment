@@ -9,24 +9,24 @@ This checklist can be used to gauge progress towards different levels of success
 ### Program Functionality
 
 The game functions correctly and meets the specification:
-- [ ] The game is **playable**
-- [ ] The game has a **GUI** with a range of controls
-- [ ] The **instructions** for the game are available via the GUI
-- [ ] Player provides game **inputs via the GUI** (e.g. moves, actions)
-- [ ] The **current status** of the game is **shown in the GUI**, updated each player input
-- [ ] The game is based on a **non-trivial map**
-- [ ] The player can **move between locations**
-- [ ] The player has a **clear purpose** they can attempt to achieve
+- [X] The game is **playable**
+- [X] The game has a **GUI** with a range of controls
+- [X] The **instructions** for the game are available via the GUI
+- [X] Player provides game **inputs via the GUI** (e.g. moves, actions)
+- [X] The **current status** of the game is **shown in the GUI**, updated each player input
+- [X] The game is based on a **non-trivial map**
+- [X] The player can **move between locations**
+- [X] The player has a **clear purpose** they can attempt to achieve
 - [ ] A **win / end / loss state** is possible
 
 ### Program Code
 
 The program stores data using:
-- [ ] **Variables** of at least two types (e.g. int, text, boolean)
+- [X] **Variables** of at least two types (e.g. int, text, boolean)
 
 The program structure:
-- [ ] Defines and implements a **graphical user interface (GUI)**
-- [ ] Makes use of user-defined OOP **classes** from which **objects** are instantiated
+- [X] Defines and implements a **graphical user interface (GUI)**
+- [X] Makes use of user-defined OOP **classes** from which **objects** are instantiated
 - [ ] Uses **functions** / **methods** to break up the code logically
 - [ ] Contains **sequences** of instructions
 - [ ] Uses **conditional** instructions to control the program flow
@@ -36,8 +36,8 @@ The program structure:
 ### Program Documentation
 
 The program code:
-- [ ] Is **indented** correctly
-- [ ] Is **laid-out clearly**
+- [X] Is **indented** correctly
+- [X] Is **laid-out clearly**
 - [ ] Contains **comments** that help in understanding how it works
 
 ### Program Testing

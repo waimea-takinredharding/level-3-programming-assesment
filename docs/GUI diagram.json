@@ -1,0 +1,1205 @@
+{
+    "initial": {
+        "diagrams": [
+            {
+                "id": "1744155792554",
+                "items": [
+                    {
+                        "id": "1744155792884",
+                        "appearance": {
+                            "FOREGROUND_COLOR": 16777215,
+                            "FONT_SIZE": 16,
+                            "BACKGROUND_COLOR": 2434341,
+                            "STROKE_COLOR": 13224393,
+                            "STROKE_THICKNESS": 1,
+                            "TEXT_ALIGNMENT": "left",
+                            "TEXT": "Area Name"
+                        },
+                        "renderer": "TextArea",
+                        "transform": {
+                            "x": 200,
+                            "y": 50,
+                            "w": 350,
+                            "h": 50,
+                            "r": 0
+                        },
+                        "type": "Shape"
+                    },
+                    {
+                        "id": "1744155792955",
+                        "appearance": {
+                            "FOREGROUND_COLOR": 16777215,
+                            "FONT_SIZE": 16,
+                            "BACKGROUND_COLOR": 2434341,
+                            "STROKE_COLOR": 13224393,
+                            "STROKE_THICKNESS": 1,
+                            "TEXT_ALIGNMENT": "left",
+                            "TEXT": "Area Location"
+                        },
+                        "renderer": "TextArea",
+                        "transform": {
+                            "x": 200,
+                            "y": 200,
+                            "w": 350,
+                            "h": 200,
+                            "r": 0
+                        },
+                        "type": "Shape"
+                    },
+                    {
+                        "id": "1744155793078",
+                        "appearance": {
+                            "FOREGROUND_COLOR": 15790320,
+                            "FONT_SIZE": 16,
+                            "BACKGROUND_COLOR": 2434341,
+                            "STROKE_COLOR": 13224393,
+                            "STROKE_THICKNESS": 1,
+                            "TEXT_ALIGNMENT": "center",
+                            "TEXT": "N"
+                        },
+                        "renderer": "Button",
+                        "transform": {
+                            "x": 575,
+                            "y": 75,
+                            "w": 50,
+                            "h": 50,
+                            "r": 0
+                        },
+                        "type": "Shape"
+                    },
+                    {
+                        "id": "1744155793108",
+                        "appearance": {
+                            "FOREGROUND_COLOR": 15790320,
+                            "FONT_SIZE": 16,
+                            "BACKGROUND_COLOR": 2434341,
+                            "STROKE_COLOR": 13224393,
+                            "STROKE_THICKNESS": 1,
+                            "TEXT_ALIGNMENT": "center",
+                            "TEXT": "W"
+                        },
+                        "renderer": "Button",
+                        "transform": {
+                            "x": 625,
+                            "y": 125,
+                            "w": 50,
+                            "h": 50,
+                            "r": 0
+                        },
+                        "type": "Shape"
+                    },
+                    {
+                        "id": "1744155793117",
+                        "appearance": {
+                            "FOREGROUND_COLOR": 15790320,
+                            "FONT_SIZE": 16,
+                            "BACKGROUND_COLOR": 2434341,
+                            "STROKE_COLOR": 13224393,
+                            "STROKE_THICKNESS": 1,
+                            "TEXT_ALIGNMENT": "center",
+                            "TEXT": "S"
+                        },
+                        "renderer": "Button",
+                        "transform": {
+                            "x": 575,
+                            "y": 175,
+                            "w": 50,
+                            "h": 50,
+                            "r": 0
+                        },
+                        "type": "Shape"
+                    },
+                    {
+                        "id": "1744155793169",
+                        "appearance": {
+                            "FOREGROUND_COLOR": 15790320,
+                            "FONT_SIZE": 16,
+                            "BACKGROUND_COLOR": 2434341,
+                            "STROKE_COLOR": 13224393,
+                            "STROKE_THICKNESS": 1,
+                            "TEXT_ALIGNMENT": "center",
+                            "TEXT": "SW"
+                        },
+                        "renderer": "Button",
+                        "transform": {
+                            "x": 625,
+                            "y": 175,
+                            "w": 50,
+                            "h": 50,
+                            "r": 0
+                        },
+                        "type": "Shape"
+                    },
+                    {
+                        "id": "1744155793225",
+                        "appearance": {
+                            "FOREGROUND_COLOR": 15790320,
+                            "FONT_SIZE": 16,
+                            "BACKGROUND_COLOR": 2434341,
+                            "STROKE_COLOR": 13224393,
+                            "STROKE_THICKNESS": 1,
+                            "TEXT_ALIGNMENT": "center",
+                            "TEXT": "SE"
+                        },
+                        "renderer": "Button",
+                        "transform": {
+                            "x": 525,
+                            "y": 175,
+                            "w": 50,
+                            "h": 50,
+                            "r": 0
+                        },
+                        "type": "Shape"
+                    },
+                    {
+                        "id": "1744155793282",
+                        "appearance": {
+                            "FOREGROUND_COLOR": 15790320,
+                            "FONT_SIZE": 16,
+                            "BACKGROUND_COLOR": 2434341,
+                            "STROKE_COLOR": 13224393,
+                            "STROKE_THICKNESS": 1,
+                            "TEXT_ALIGNMENT": "center",
+                            "TEXT": "E"
+                        },
+                        "renderer": "Button",
+                        "transform": {
+                            "x": 525,
+                            "y": 125,
+                            "w": 50,
+                            "h": 50,
+                            "r": 0
+                        },
+                        "type": "Shape"
+                    },
+                    {
+                        "id": "1744155793354",
+                        "appearance": {
+                            "FOREGROUND_COLOR": 15790320,
+                            "FONT_SIZE": 16,
+                            "BACKGROUND_COLOR": 2434341,
+                            "STROKE_COLOR": 13224393,
+                            "STROKE_THICKNESS": 1,
+                            "TEXT_ALIGNMENT": "center",
+                            "TEXT": "NE"
+                        },
+                        "renderer": "Button",
+                        "transform": {
+                            "x": 525,
+                            "y": 75,
+                            "w": 50,
+                            "h": 50,
+                            "r": 0
+                        },
+                        "type": "Shape"
+                    },
+                    {
+                        "id": "1744155793426",
+                        "appearance": {
+                            "FOREGROUND_COLOR": 15790320,
+                            "FONT_SIZE": 16,
+                            "BACKGROUND_COLOR": 2434341,
+                            "STROKE_COLOR": 13224393,
+                            "STROKE_THICKNESS": 1,
+                            "TEXT_ALIGNMENT": "center",
+                            "TEXT": "NW"
+                        },
+                        "renderer": "Button",
+                        "transform": {
+                            "x": 625,
+                            "y": 75,
+                            "w": 50,
+                            "h": 50,
+                            "r": 0
+                        },
+                        "type": "Shape"
+                    },
+                    {
+                        "id": "1744155793542",
+                        "appearance": {
+                            "FOREGROUND_COLOR": 15790320,
+                            "FONT_SIZE": 16,
+                            "BACKGROUND_COLOR": 2434341,
+                            "STROKE_COLOR": 13224393,
+                            "STROKE_THICKNESS": 1,
+                            "TEXT_ALIGNMENT": "left",
+                            "TEXT": "Checkbox",
+                            "STATE": "Normal"
+                        },
+                        "renderer": "Checkbox",
+                        "transform": {
+                            "x": 75,
+                            "y": 344,
+                            "w": 100,
+                            "h": 36,
+                            "r": 0
+                        },
+                        "type": "Shape"
+                    }
+                ],
+                "rootIds": [
+                    "1744155792884",
+                    "1744155792955",
+                    "1744155793078",
+                    "1744155793108",
+                    "1744155793117",
+                    "1744155793169",
+                    "1744155793225",
+                    "1744155793282",
+                    "1744155793354",
+                    "1744155793426",
+                    "1744155793542"
+                ]
+            }
+        ],
+        "diagramIds": [
+            "1744155792554"
+        ],
+        "id": "94dba773-01e6-1e94-cd54-b93431954149",
+        "size": {
+            "x": 800,
+            "y": 400
+        }
+    },
+    "actions": [
+        {
+            "type": "items/transform",
+            "payload": {
+                "diagramId": "1744155792554",
+                "timestamp": 1744156995949,
+                "oldBounds": {
+                    "x": 75,
+                    "y": 344,
+                    "w": 100,
+                    "h": 36,
+                    "r": 0
+                },
+                "newBounds": {
+                    "x": 75,
+                    "y": 345.5,
+                    "w": 100,
+                    "h": 37,
+                    "r": 0
+                },
+                "itemIds": [
+                    "1744155793542"
+                ]
+            }
+        },
+        {
+            "type": "items/transform",
+            "payload": {
+                "diagramId": "1744155792554",
+                "timestamp": 1744156996591,
+                "oldBounds": {
+                    "x": 75,
+                    "y": 345,
+                    "w": 100,
+                    "h": 36,
+                    "r": 0
+                },
+                "newBounds": {
+                    "x": 75,
+                    "y": 346.5,
+                    "w": 100,
+                    "h": 37,
+                    "r": 0
+                },
+                "itemIds": [
+                    "1744155793542"
+                ]
+            }
+        },
+        {
+            "type": "items/transform",
+            "payload": {
+                "diagramId": "1744155792554",
+                "timestamp": 1744156997341,
+                "oldBounds": {
+                    "x": 75,
+                    "y": 346,
+                    "w": 100,
+                    "h": 36,
+                    "r": 0
+                },
+                "newBounds": {
+                    "x": 75,
+                    "y": 347.5,
+                    "w": 100,
+                    "h": 37,
+                    "r": 0
+                },
+                "itemIds": [
+                    "1744155793542"
+                ]
+            }
+        },
+        {
+            "type": "items/transform",
+            "payload": {
+                "diagramId": "1744155792554",
+                "timestamp": 1744156998106,
+                "oldBounds": {
+                    "x": 75,
+                    "y": 347,
+                    "w": 100,
+                    "h": 36,
+                    "r": 0
+                },
+                "newBounds": {
+                    "x": 75,
+                    "y": 348.5,
+                    "w": 100,
+                    "h": 37,
+                    "r": 0
+                },
+                "itemIds": [
+                    "1744155793542"
+                ]
+            }
+        },
+        {
+            "type": "items/transform",
+            "payload": {
+                "diagramId": "1744155792554",
+                "timestamp": 1744156998803,
+                "oldBounds": {
+                    "x": 75,
+                    "y": 348,
+                    "w": 100,
+                    "h": 36,
+                    "r": 0
+                },
+                "newBounds": {
+                    "x": 75,
+                    "y": 349.5,
+                    "w": 100,
+                    "h": 37,
+                    "r": 0
+                },
+                "itemIds": [
+                    "1744155793542"
+                ]
+            }
+        },
+        {
+            "type": "items/transform",
+            "payload": {
+                "diagramId": "1744155792554",
+                "timestamp": 1744156999840,
+                "oldBounds": {
+                    "x": 75,
+                    "y": 349,
+                    "w": 100,
+                    "h": 36,
+                    "r": 0
+                },
+                "newBounds": {
+                    "x": 75,
+                    "y": 333.5,
+                    "w": 100,
+                    "h": 3,
+                    "r": 0
+                },
+                "itemIds": [
+                    "1744155793542"
+                ]
+            }
+        },
+        {
+            "type": "items/remove",
+            "payload": {
+                "diagramId": "1744155792554",
+                "timestamp": 1744157002596,
+                "itemIds": [
+                    "1744155793542"
+                ]
+            }
+        },
+        {
+            "type": "items/transform",
+            "payload": {
+                "diagramId": "1744155792554",
+                "timestamp": 1744157036621,
+                "oldBounds": {
+                    "x": 200,
+                    "y": 200,
+                    "w": 350,
+                    "h": 200,
+                    "r": 0
+                },
+                "newBounds": {
+                    "x": 1600,
+                    "y": 200,
+                    "w": 3150,
+                    "h": 200,
+                    "r": 0
+                },
+                "itemIds": [
+                    "1744155792955"
+                ]
+            }
+        },
+        {
+            "type": "items/transform",
+            "payload": {
+                "diagramId": "1744155792554",
+                "timestamp": 1744157038606,
+                "oldBounds": {
+                    "x": 1600,
+                    "y": 200,
+                    "w": 3150,
+                    "h": 200,
+                    "r": 0
+                },
+                "newBounds": {
+                    "x": 27.5,
+                    "y": 200,
+                    "w": 3,
+                    "h": 200,
+                    "r": 0
+                },
+                "itemIds": [
+                    "1744155792955"
+                ]
+            }
+        },
+        {
+            "type": "items/transform",
+            "payload": {
+                "diagramId": "1744155792554",
+                "timestamp": 1744157039920,
+                "oldBounds": {
+                    "x": 27.5,
+                    "y": 200,
+                    "w": 3,
+                    "h": 200,
+                    "r": 0
+                },
+                "newBounds": {
+                    "x": 101,
+                    "y": 200,
+                    "w": 150,
+                    "h": 200,
+                    "r": 0
+                },
+                "itemIds": [
+                    "1744155792955"
+                ]
+            }
+        },
+        {
+            "type": "items/transform",
+            "payload": {
+                "diagramId": "1744155792554",
+                "timestamp": 1744157042657,
+                "oldBounds": {
+                    "x": 101,
+                    "y": 200,
+                    "w": 150,
+                    "h": 200,
+                    "r": 0
+                },
+                "newBounds": {
+                    "x": 34.5,
+                    "y": 200,
+                    "w": 15,
+                    "h": 200,
+                    "r": 0
+                },
+                "itemIds": [
+                    "1744155792955"
+                ]
+            }
+        },
+        {
+            "type": "items/transform",
+            "payload": {
+                "diagramId": "1744155792554",
+                "timestamp": 1744157043797,
+                "oldBounds": {
+                    "x": 34.5,
+                    "y": 200,
+                    "w": 15,
+                    "h": 200,
+                    "r": 0
+                },
+                "newBounds": {
+                    "x": 702,
+                    "y": 200,
+                    "w": 1350,
+                    "h": 200,
+                    "r": 0
+                },
+                "itemIds": [
+                    "1744155792955"
+                ]
+            }
+        },
+        {
+            "type": "items/transform",
+            "payload": {
+                "diagramId": "1744155792554",
+                "timestamp": 1744157045109,
+                "oldBounds": {
+                    "x": 702,
+                    "y": 200,
+                    "w": 1350,
+                    "h": 200,
+                    "r": 0
+                },
+                "newBounds": {
+                    "x": 27,
+                    "y": 200,
+                    "w": 0,
+                    "h": 200,
+                    "r": 0
+                },
+                "itemIds": [
+                    "1744155792955"
+                ]
+            }
+        },
+        {
+            "type": "items/transform",
+            "payload": {
+                "diagramId": "1744155792554",
+                "timestamp": 1744157045979,
+                "oldBounds": {
+                    "x": 27,
+                    "y": 200,
+                    "w": 0,
+                    "h": 200,
+                    "r": 0
+                },
+                "newBounds": {
+                    "x": 202,
+                    "y": 200,
+                    "w": 350,
+                    "h": 200,
+                    "r": 0
+                },
+                "itemIds": [
+                    "1744155792955"
+                ]
+            }
+        },
+        {
+            "type": "items/transform",
+            "payload": {
+                "diagramId": "1744155792554",
+                "timestamp": 1744157050829,
+                "oldBounds": {
+                    "x": 202,
+                    "y": 200,
+                    "w": 350,
+                    "h": 200,
+                    "r": 0
+                },
+                "newBounds": {
+                    "x": 202,
+                    "y": 175,
+                    "w": 350,
+                    "h": 150,
+                    "r": 0
+                },
+                "itemIds": [
+                    "1744155792955"
+                ]
+            }
+        },
+        {
+            "type": "items/transform",
+            "payload": {
+                "diagramId": "1744155792554",
+                "timestamp": 1744157054619,
+                "oldBounds": {
+                    "x": 202,
+                    "y": 175,
+                    "w": 350,
+                    "h": 150,
+                    "r": 0
+                },
+                "newBounds": {
+                    "x": 200,
+                    "y": 175,
+                    "w": 350,
+                    "h": 150,
+                    "r": 0
+                },
+                "itemIds": [
+                    "1744155792955"
+                ]
+            }
+        },
+        {
+            "type": "items/transform",
+            "payload": {
+                "diagramId": "1744155792554",
+                "timestamp": 1744157066699,
+                "oldBounds": {
+                    "x": 200,
+                    "y": 175,
+                    "w": 350,
+                    "h": 150,
+                    "r": 0
+                },
+                "newBounds": {
+                    "x": 550,
+                    "y": 175,
+                    "w": 350,
+                    "h": 150,
+                    "r": 0
+                },
+                "itemIds": [
+                    "1744155792955"
+                ]
+            }
+        },
+        {
+            "type": "items/transform",
+            "payload": {
+                "diagramId": "1744155792554",
+                "timestamp": 1744157069070,
+                "oldBounds": {
+                    "x": 550,
+                    "y": 175,
+                    "w": 350,
+                    "h": 150,
+                    "r": 0
+                },
+                "newBounds": {
+                    "x": 550,
+                    "y": 85,
+                    "w": 350,
+                    "h": 150,
+                    "r": 0
+                },
+                "itemIds": [
+                    "1744155792955"
+                ]
+            }
+        },
+        {
+            "type": "items/transform",
+            "payload": {
+                "diagramId": "1744155792554",
+                "timestamp": 1744157069890,
+                "oldBounds": {
+                    "x": 550,
+                    "y": 85,
+                    "w": 350,
+                    "h": 150,
+                    "r": 0
+                },
+                "newBounds": {
+                    "x": 550,
+                    "y": 76,
+                    "w": 350,
+                    "h": 150,
+                    "r": 0
+                },
+                "itemIds": [
+                    "1744155792955"
+                ]
+            }
+        },
+        {
+            "type": "items/transform",
+            "payload": {
+                "diagramId": "1744155792554",
+                "timestamp": 1744157071846,
+                "oldBounds": {
+                    "x": 550,
+                    "y": 76,
+                    "w": 350,
+                    "h": 150,
+                    "r": 0
+                },
+                "newBounds": {
+                    "x": 550,
+                    "y": 325,
+                    "w": 350,
+                    "h": 150,
+                    "r": 0
+                },
+                "itemIds": [
+                    "1744155792955"
+                ]
+            }
+        },
+        {
+            "type": "items/transform",
+            "payload": {
+                "diagramId": "1744155792554",
+                "timestamp": 1744157077896,
+                "oldBounds": {
+                    "x": 550,
+                    "y": 325,
+                    "w": 350,
+                    "h": 150,
+                    "r": 0
+                },
+                "newBounds": {
+                    "x": 550,
+                    "y": 275,
+                    "w": 350,
+                    "h": 150,
+                    "r": 0
+                },
+                "itemIds": [
+                    "1744155792955"
+                ]
+            }
+        },
+        {
+            "type": "items/transform",
+            "payload": {
+                "diagramId": "1744155792554",
+                "timestamp": 1744157080549,
+                "oldBounds": {
+                    "x": 550,
+                    "y": 275,
+                    "w": 350,
+                    "h": 150,
+                    "r": 0
+                },
+                "newBounds": {
+                    "x": 550,
+                    "y": 300,
+                    "w": 350,
+                    "h": 150,
+                    "r": 0
+                },
+                "itemIds": [
+                    "1744155792955"
+                ]
+            }
+        },
+        {
+            "type": "items/transform",
+            "payload": {
+                "diagramId": "1744155792554",
+                "timestamp": 1744157088306,
+                "oldBounds": {
+                    "x": 550,
+                    "y": 300,
+                    "w": 350,
+                    "h": 150,
+                    "r": 0
+                },
+                "newBounds": {
+                    "x": 600,
+                    "y": 300,
+                    "w": 350,
+                    "h": 150,
+                    "r": 0
+                },
+                "itemIds": [
+                    "1744155792955"
+                ]
+            }
+        },
+        {
+            "type": "items/addShape",
+            "payload": {
+                "diagramId": "1744155792554",
+                "timestamp": 1744157114233,
+                "id": "1744155793764",
+                "renderer": "Paragraph",
+                "position": {
+                    "x": 100,
+                    "y": 100
+                }
+            }
+        },
+        {
+            "type": "items/appearance",
+            "payload": {
+                "diagramId": "1744155792554",
+                "timestamp": 1744157126920,
+                "appearance": {
+                    "key": "TEXT",
+                    "value": "Area Description"
+                },
+                "force": false,
+                "itemIds": [
+                    "1744155793764"
+                ]
+            }
+        },
+        {
+            "type": "items/remove",
+            "payload": {
+                "diagramId": "1744155792554",
+                "timestamp": 1744157130258,
+                "itemIds": [
+                    "1744155793764"
+                ]
+            }
+        },
+        {
+            "type": "items/transform",
+            "payload": {
+                "diagramId": "1744155792554",
+                "timestamp": 1744157136835,
+                "oldBounds": {
+                    "x": 600,
+                    "y": 300,
+                    "w": 350,
+                    "h": 150,
+                    "r": 0
+                },
+                "newBounds": {
+                    "x": 200,
+                    "y": 300,
+                    "w": 350,
+                    "h": 150,
+                    "r": 0
+                },
+                "itemIds": [
+                    "1744155792955"
+                ]
+            }
+        },
+        {
+            "type": "items/transform",
+            "payload": {
+                "diagramId": "1744155792554",
+                "timestamp": 1744157140229,
+                "oldBounds": {
+                    "x": 200,
+                    "y": 300,
+                    "w": 350,
+                    "h": 150,
+                    "r": 0
+                },
+                "newBounds": {
+                    "x": 200,
+                    "y": 125,
+                    "w": 350,
+                    "h": 150,
+                    "r": 0
+                },
+                "itemIds": [
+                    "1744155792955"
+                ]
+            }
+        },
+        {
+            "type": "items/transform",
+            "payload": {
+                "diagramId": "1744155792554",
+                "timestamp": 1744157143194,
+                "oldBounds": {
+                    "x": 200,
+                    "y": 125,
+                    "w": 350,
+                    "h": 150,
+                    "r": 0
+                },
+                "newBounds": {
+                    "x": 200,
+                    "y": 175,
+                    "w": 350,
+                    "h": 150,
+                    "r": 0
+                },
+                "itemIds": [
+                    "1744155792955"
+                ]
+            }
+        },
+        {
+            "type": "items/addShape",
+            "payload": {
+                "diagramId": "1744155792554",
+                "timestamp": 1744157154064,
+                "id": "1744155793801",
+                "renderer": "Label",
+                "position": {
+                    "x": 65.00001525878906,
+                    "y": 288.20001220703125
+                }
+            }
+        },
+        {
+            "type": "items/transform",
+            "payload": {
+                "diagramId": "1744155792554",
+                "timestamp": 1744157157683,
+                "oldBounds": {
+                    "x": 89,
+                    "y": 303,
+                    "w": 48,
+                    "h": 30,
+                    "r": 0
+                },
+                "newBounds": {
+                    "x": 90,
+                    "y": 303,
+                    "w": 50,
+                    "h": 30,
+                    "r": 0
+                },
+                "itemIds": [
+                    "1744155793801"
+                ]
+            }
+        },
+        {
+            "type": "items/transform",
+            "payload": {
+                "diagramId": "1744155792554",
+                "timestamp": 1744157160598,
+                "oldBounds": {
+                    "x": 90,
+                    "y": 303,
+                    "w": 50,
+                    "h": 30,
+                    "r": 0
+                },
+                "newBounds": {
+                    "x": 90,
+                    "y": 313,
+                    "w": 50,
+                    "h": 50,
+                    "r": 0
+                },
+                "itemIds": [
+                    "1744155793801"
+                ]
+            }
+        },
+        {
+            "type": "items/remove",
+            "payload": {
+                "diagramId": "1744155792554",
+                "timestamp": 1744157163073,
+                "itemIds": [
+                    "1744155793801"
+                ]
+            }
+        },
+        {
+            "type": "items/addShape",
+            "payload": {
+                "diagramId": "1744155792554",
+                "timestamp": 1744157177946,
+                "id": "1744155793882",
+                "renderer": "TextArea",
+                "position": {
+                    "x": 74.20000648498535,
+                    "y": 306
+                }
+            }
+        },
+        {
+            "type": "items/transform",
+            "payload": {
+                "diagramId": "1744155792554",
+                "timestamp": 1744157185141,
+                "oldBounds": {
+                    "x": 154,
+                    "y": 336,
+                    "w": 160,
+                    "h": 60,
+                    "r": 0
+                },
+                "newBounds": {
+                    "x": 124,
+                    "y": 336,
+                    "w": 100,
+                    "h": 60,
+                    "r": 0
+                },
+                "itemIds": [
+                    "1744155793882"
+                ]
+            }
+        },
+        {
+            "type": "items/transform",
+            "payload": {
+                "diagramId": "1744155792554",
+                "timestamp": 1744157187953,
+                "oldBounds": {
+                    "x": 124,
+                    "y": 336,
+                    "w": 100,
+                    "h": 60,
+                    "r": 0
+                },
+                "newBounds": {
+                    "x": 124,
+                    "y": 356,
+                    "w": 100,
+                    "h": 100,
+                    "r": 0
+                },
+                "itemIds": [
+                    "1744155793882"
+                ]
+            }
+        },
+        {
+            "type": "items/transform",
+            "payload": {
+                "diagramId": "1744155792554",
+                "timestamp": 1744157193110,
+                "oldBounds": {
+                    "x": 124,
+                    "y": 356,
+                    "w": 100,
+                    "h": 100,
+                    "r": 0
+                },
+                "newBounds": {
+                    "x": 75,
+                    "y": 356,
+                    "w": 100,
+                    "h": 100,
+                    "r": 0
+                },
+                "itemIds": [
+                    "1744155793882"
+                ]
+            }
+        },
+        {
+            "type": "items/transform",
+            "payload": {
+                "diagramId": "1744155792554",
+                "timestamp": 1744157194922,
+                "oldBounds": {
+                    "x": 75,
+                    "y": 356,
+                    "w": 100,
+                    "h": 100,
+                    "r": 0
+                },
+                "newBounds": {
+                    "x": 75,
+                    "y": 80,
+                    "w": 100,
+                    "h": 100,
+                    "r": 0
+                },
+                "itemIds": [
+                    "1744155793882"
+                ]
+            }
+        },
+        {
+            "type": "items/transform",
+            "payload": {
+                "diagramId": "1744155792554",
+                "timestamp": 1744157195670,
+                "oldBounds": {
+                    "x": 75,
+                    "y": 80,
+                    "w": 100,
+                    "h": 100,
+                    "r": 0
+                },
+                "newBounds": {
+                    "x": 75,
+                    "y": 53,
+                    "w": 100,
+                    "h": 100,
+                    "r": 0
+                },
+                "itemIds": [
+                    "1744155793882"
+                ]
+            }
+        },
+        {
+            "type": "items/transform",
+            "payload": {
+                "diagramId": "1744155792554",
+                "timestamp": 1744157197072,
+                "oldBounds": {
+                    "x": 75,
+                    "y": 53,
+                    "w": 100,
+                    "h": 100,
+                    "r": 0
+                },
+                "newBounds": {
+                    "x": 75,
+                    "y": 300,
+                    "w": 100,
+                    "h": 100,
+                    "r": 0
+                },
+                "itemIds": [
+                    "1744155793882"
+                ]
+            }
+        },
+        {
+            "type": "items/transform",
+            "payload": {
+                "diagramId": "1744155792554",
+                "timestamp": 1744157199756,
+                "oldBounds": {
+                    "x": 75,
+                    "y": 300,
+                    "w": 100,
+                    "h": 100,
+                    "r": 0
+                },
+                "newBounds": {
+                    "x": 75,
+                    "y": 75,
+                    "w": 100,
+                    "h": 100,
+                    "r": 0
+                },
+                "itemIds": [
+                    "1744155793882"
+                ]
+            }
+        },
+        {
+            "type": "items/transform",
+            "payload": {
+                "diagramId": "1744155792554",
+                "timestamp": 1744157200925,
+                "oldBounds": {
+                    "x": 75,
+                    "y": 75,
+                    "w": 100,
+                    "h": 100,
+                    "r": 0
+                },
+                "newBounds": {
+                    "x": 75,
+                    "y": 325,
+                    "w": 100,
+                    "h": 100,
+                    "r": 0
+                },
+                "itemIds": [
+                    "1744155793882"
+                ]
+            }
+        },
+        {
+            "type": "items/appearance",
+            "payload": {
+                "diagramId": "1744155792554",
+                "timestamp": 1744157223569,
+                "appearance": {
+                    "key": "TEXT",
+                    "value": "Key if owned"
+                },
+                "force": false,
+                "itemIds": [
+                    "1744155793882"
+                ]
+            }
+        }
+    ]
+}
