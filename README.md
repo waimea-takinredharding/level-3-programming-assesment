@@ -30,4 +30,5 @@ The project is written in the [Kotlin](https://kotlinlang.org) programming langu
 
 **You are a worker in an automated Universal Production Factory, run by an A.I. called HUD,
 designed to keep an eye on factory operations. Unknown causes have spurred HUD to neglect their duties,
-throwing the entire factory into disorganised and dangerous disarray.
+throwing the entire factory into disorganised and dangerous disarray. You will need to either:
+shut down the production line, convince HUD to continue work, or escape.

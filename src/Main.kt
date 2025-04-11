@@ -75,7 +75,7 @@ class App() {
         messHall.west = hallway2AF
         messHall.northEast = productionLine
 
-        //defining the directional relationships between the production Line and the other rooms
+        //defining the directional relationships between the Production Line and the other rooms
         productionLine.southWest = messHall
 
         /**
