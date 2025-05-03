@@ -37,20 +37,33 @@ fun main() {
 class App() {
     // Data fields
     var hasKey: Boolean
-    lateinit var currentRoom: Room
+    var currentRoom: Room
+    var keyRoom: Room
+    var needsKeyRoom: List<Room>
+    var finalRoom: List<Room>
 
     //defining every room
     init {
-        val quarters = Room("Personal Quarters", "The personal quarters of the overview team. That includes you.")
+        val quarters = Room("Personal Quarters", "HUD has gone out of control. Your options are: find HUD and convince " +
+                "them to resume work, shut off the factory to prevent a meltdown, or leave the facility outright.")
         val quickTravelPoint = Room("Travel Point", "You can head to the main exit of the facility much faster from here," +
                 "if you have the Overall Access Key." )
         val hallway2AF = Room("Hallway 2-AF", "This is one of the main hallways used for the overview team to " +
                 "traverse the facility for routine inspections and leaving at the end of the day.")
         val keyHere = Room("Overview Team Storage Room"," The main area wherein the overview team keeps personal belongings" +
                 "during work hours")
+        val endHUD = Room("HUD", "The main operations of HUD are here. Congratulations on winning the game.")
         val messHall = Room("Mess Hall", "The main area where the overview team eats. Not the only, but the main.")
         val productionLine = Room("Production Line", "The beating heart of the UPF, or at least it's supposed to be." +
                 "The entire facility is either stopped, or malfunctioning. It seems to be stable for now, but that could change. Keep going.")
+        val endFactorySettings = Room("Factory Settings", "The factory operations can be manually adjusted from here. Congratulations on " +
+                "winning the game.")
+        val shippingArea = Room("Shipping Area", "This area handles all the materials coming in and goods coming out." +
+                "There are several automated vehicles currently driving in random directions like bumper cars on the ground floor.")
+        val quickTravelDestination = Room("Travel Destination", "You can reach this point quickly from the Personal Quarters " +
+                "if you have the access key." )
+        val centralAtrium = Room("Central Atrium", "The 'lobby' of the UPF. Exit is within your grasp.")
+        val endExit = Room("Exit", "The front door. Congratulations on winning the game.")
 
 
         //defining the directional relationships between the Personal Quarters and the other rooms
@@ -64,11 +77,15 @@ class App() {
 
         //defining the directional relationships between the Overview Team Storage Room and the other rooms
         keyHere.north = hallway2AF
-//        keyHere.southWest = HUD
+        keyHere.southEast = endHUD
 
         //defining the directional relationships between the Travel Point and the other rooms
         quickTravelPoint.southWest = quarters
         quickTravelPoint.south = messHall
+        quickTravelPoint.east = quickTravelDestination
+
+        //defining the directional relationships between the Travel Destination and the other rooms
+        quickTravelDestination.southEast = centralAtrium
 
         //defining the directional relationships between the Mess Hall and the other rooms
         messHall.north = quickTravelPoint
@@ -77,6 +94,17 @@ class App() {
 
         //defining the directional relationships between the Production Line and the other rooms
         productionLine.southWest = messHall
+        productionLine.southEast = shippingArea
+        productionLine.south = endFactorySettings
+
+        //defining the directional relationships between the Shipping Area and the other rooms
+        shippingArea.northWest = productionLine
+        shippingArea.north = centralAtrium
+
+        //defining the directional relationships between the Shipping Area and the other rooms
+        centralAtrium.northWest = quickTravelDestination
+        centralAtrium.south = shippingArea
+        centralAtrium.east = endExit
 
         /**
          * resetting things every time the window is opened;
@@ -84,53 +112,44 @@ class App() {
          * and the player having the key is set as FALSE
          */
         currentRoom = quarters
+        keyRoom = keyHere
+        needsKeyRoom = listOf(quickTravelDestination, endHUD, endFactorySettings, endExit)
+        finalRoom = listOf(endHUD, endFactorySettings, endExit)
         hasKey = false
     }
 
-    /**
-     * these 'moveDirection' functions work by checking if the room defined as [direction] to the current room
-     * is NOT null. If it is not, then the current room is redefined as that room.
-     */
-    fun moveNorth() {
-        if (currentRoom.north != null) {
-            currentRoom = currentRoom.north!!
+    // Shared movement logic
+    fun moveToRoom(nextRoom: Room?) {
+
+        //If there's no room to go to than return
+        if (nextRoom == null) return
+
+        //If entering the room requires the key and player doesn't have key then return
+        if (nextRoom in needsKeyRoom && !hasKey) return
+
+        /**
+         * this works by checking if the room defined as [direction] to the current room
+         * is NOT null. If it is not, then the current room is redefined as that room.
+         */
+        currentRoom = nextRoom
+
+        // Final room reached — show message after a delay
+        if (nextRoom in finalRoom) {
+            Timer(3000) { // 3-second delay before showing the dialog
+                JOptionPane.showMessageDialog(null, "You win!")
+                System.exit(0)  // Close the app after showing the message
+            }.start()
         }
     }
-    fun moveNorthEast() {
-        if (currentRoom.northEast != null) {
-            currentRoom = currentRoom.northEast!!
-        }
-    }
-    fun moveEast() {
-        if (currentRoom.east != null) {
-            currentRoom = currentRoom.east!!
-        }
-    }
-    fun moveSouthEast() {
-        if (currentRoom.southEast != null) {
-            currentRoom = currentRoom.southEast!!
-        }
-    }
-    fun moveSouth() {
-        if (currentRoom.south != null) {
-            currentRoom = currentRoom.south!!
-        }
-    }
-    fun moveSouthWest() {
-        if (currentRoom.southWest != null) {
-            currentRoom = currentRoom.southWest!!
-        }
-    }
-    fun moveWest() {
-        if (currentRoom.west != null) {
-            currentRoom = currentRoom.west!!
-        }
-    }
-    fun moveNorthWest() {
-        if (currentRoom.northWest != null) {
-            currentRoom = currentRoom.northWest!!
-        }
-    }
+
+    fun moveNorth() = moveToRoom(currentRoom.north)
+    fun moveNorthEast() = moveToRoom(currentRoom.northEast)
+    fun moveEast() = moveToRoom(currentRoom.east)
+    fun moveSouthEast() = moveToRoom(currentRoom.southEast)
+    fun moveSouth() = moveToRoom(currentRoom.south)
+    fun moveSouthWest() = moveToRoom(currentRoom.southWest)
+    fun moveWest() = moveToRoom(currentRoom.west)
+    fun moveNorthWest() = moveToRoom(currentRoom.northWest)
 }
 
 //this makes the main class; the rooms in the game.
@@ -180,9 +199,8 @@ class MainWindow(val app: App) : JFrame(), ActionListener {
 
 
     //Configure the main window
-
     private fun configureWindow() {
-        title = "out Of Control"
+        title = "Out Of Control"
         contentPane.preferredSize = Dimension(800, 400)
         defaultCloseOperation = WindowConstants.EXIT_ON_CLOSE
         isResizable = false
@@ -193,10 +211,8 @@ class MainWindow(val app: App) : JFrame(), ActionListener {
 
 
     //Populate the UI with UI controls
-
     private fun addControls() {
         val baseFont = Font(Font.SANS_SERIF, Font.PLAIN, 12)
-
 
         //these two code blocks show the Name and Description of the current room
         areaName = JLabel("AREA NAME HERE")
@@ -268,14 +284,13 @@ class MainWindow(val app: App) : JFrame(), ActionListener {
         add(eastButton)
     }
 
-
     /**
      * Update the UI controls based on the current state
      * of the application model
      */
     fun updateView() {
         areaName.text = app.currentRoom.name
-        areaDesc.text = app.currentRoom.description
+        areaDesc.text = "<html>" + app.currentRoom.description
 
         /**
          * These lines disable the corresponding movement button
@@ -290,6 +305,8 @@ class MainWindow(val app: App) : JFrame(), ActionListener {
         westButton.isEnabled = app.currentRoom.west != null
         northwestButton.isEnabled = app.currentRoom.northWest != null
 
+        if (app.hasKey) keyYesNo.text = "You have the key" else keyYesNo.text = "You do not have the key"
+        if (app.currentRoom == app.keyRoom) app.hasKey = true
     }
 
     /**
@@ -336,4 +353,3 @@ class MainWindow(val app: App) : JFrame(), ActionListener {
         }
     }
 }
-
